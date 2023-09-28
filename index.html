@@ -2,9 +2,25 @@
 <html>
   <head>
     <title>Chart Retriever</title>
+    <link rel='icon' type='image/x-icon' href='favicon.png'/>
   </head>
 
   <body>
-    <input type="text">
+    <input id='icao' placeholder='ICAO'>
+    <input id='keyword' placeholder='Keyword'>
+    
+    <select id='chartToFind'>
+     	<option value=ground>Ground Chart</option>
+	<option value=departure>SID</option>
+	<option value=ils>ILS</option>
+	<option value=rnav>RNAV</option>
+	<option value=star>STAR</option>
+	<option value=visual>Visual</option>
+	<option value=keyword>Keyword</option>
+    </select>
+    <br>
+    <button onclick='FindChart()'>Go</button>
+
+    <script type='text/javascript' src='main.js'></script>
   </body>
 </html>
